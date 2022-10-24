@@ -123,6 +123,16 @@ class Builder
     }
 
     /**
+     * 多条件查询
+     */
+    public function whereArr(array $arr)
+    {
+        $this->wheres = $arr;
+
+        return $this;
+    }
+
+    /**
      * Add a "where in" constraint to the search query.
      *
      * @param  string  $field
